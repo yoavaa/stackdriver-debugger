@@ -2,3 +2,5 @@ node_modules
 dist
 .idea
 key.json
+package-lock.json
+*.iml
