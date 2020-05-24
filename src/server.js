@@ -7,7 +7,7 @@ require('@google-cloud/debug-agent').start({
   }
 });
 
-
+import "@babel/polyfill";
 // Importing node modules
 import express from 'express';
 // Importing source files
