@@ -1,3 +1,13 @@
+require('@google-cloud/debug-agent').start({
+  projectId: 'test-debugger-node-js',
+  keyFilename: 'key.json',
+  serviceContext: {
+    service: 'test-app',
+    version: 'v1.0'
+  }
+});
+
+
 // Importing node modules
 import express from 'express';
 // Importing source files
