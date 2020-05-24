@@ -12,10 +12,12 @@ require('@google-cloud/debug-agent').start({
 import express from 'express';
 // Importing source files
 import routes from './routes/main.routes';
+import foo from './routes/page1';
 // consts
 const app = express();
 
 app.use('/', routes);
+app.get('/page', foo);
 
 // arrow functions
 const server = app.listen(3000, () => {
