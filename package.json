@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/babel/bin/babel.js src --source-maps inline --out-dir dist",
-    "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel/bin/babel-node.js src/server.js"
+    "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel/bin/babel-node.js src/server.js",
+    "move": "mv src src-org && mv dist src",
+    "move-back": "mv src dist && mv src-orig src"
   },
   "author": "",
   "license": "ISC",
