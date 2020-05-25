@@ -1,4 +1,5 @@
 // Import node module
+console.log('running main')
 import express from 'express';
 const router = express.Router();
 

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/babel/bin/babel.js src --source-maps inline --out-dir dist",
-    "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel/bin/babel-node.js src/server.js",
+    "start": "node_modules/nodemon/bin/nodemon.js -- node_modules/babel/bin/babel-node.js src/loader.js",
     "move": "mv src src-org && mv dist src",
     "move-back": "mv src dist && mv src-orig src"
   },
@@ -15,7 +15,9 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "@google-cloud/debug-agent": "^4.2.2",
-    "express": "4.13.3"
+    "convert-source-map": "^1.7.0",
+    "express": "4.13.3",
+    "pirates": "^4.0.1"
   },
   "devDependencies": {
     "babel": "5.8.29",

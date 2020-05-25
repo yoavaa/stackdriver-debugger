@@ -1,3 +1,4 @@
+console.log('running page 1')
 export default function foo(req, res) {
   let x = 1;
   let y = x * 2;
